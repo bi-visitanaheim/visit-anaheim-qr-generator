@@ -8,12 +8,9 @@ The page is fully self-contained — the QR library is vendored inline, so it ha
 
 This tool is gated behind HTTP Basic Auth so it isn't publicly browsable. Visiting the site will prompt for a username and password before showing the page.
 
-Credentials are configured as environment variables in the Vercel project (Settings → Environment Variables):
+Username and password: [password](https://visitanaheimorg.sharepoint.com/:t:/s/BusinessIntelligence-Apps/IQBeHSbulUIXTIs1ssrw8joaATNfG2IDBEGPi3dufTz-Xcw?e=Y7ebwj) (only Visit Anaheim staff have access to view this document).
 
-| Variable | Required | Notes |
-|---|---|---|
-| `GATE_PASSWORD` | Yes | The password required to view the tool. |
-| `GATE_USER` | No | Defaults to `anaheim` if not set. |
+Credentials are configured as environment variables in the Vercel project (Settings → Environment Variables): `GATE_USER` and `GATE_PASSWORD`.
 
 **Important:** environment variable changes only apply to deployments made *after* they're saved. After adding or changing either variable, trigger a new deployment (push a commit, or use Deployments → **⋯** → Redeploy) — otherwise the live site keeps running on the old build.
 
