@@ -24,7 +24,7 @@ module.exports = (req, res) => {
     const pass = decoded.slice(sepIndex + 1);
 
     if (user === validUser && pass === validPass) {
-      const html = fs.readFileSync(path.join(process.cwd(), 'index.html'), 'utf8');
+      const html = fs.readFileSync(path.join(__dirname, 'page.html'), 'utf8');
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
       res.statusCode = 200;
       res.end(html);
